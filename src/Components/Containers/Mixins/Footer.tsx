@@ -1,42 +1,41 @@
-import { FC } from "react";
-import Link from "next/link";
-import { GmailIcon } from "../../Common/CustomIcons";
+import { FC } from 'react';
+import Link from 'next/link';
+import { GmailIcon } from '../../Common/CustomIcons';
 
 import {
-  FacebookIcon,
   InstagramIcon,
   LinkedInIcon,
   TwitterIcon,
-} from "../../Common/CustomIcons";
+} from '../../Common/CustomIcons';
 
 const Footer: FC = () => {
   const year = new Date().getFullYear();
 
   const primaryLink = [
-    { title: "Home", url: "/" },
-    { title: "About", url: "/about" },
+    { title: 'Home', url: '/' },
+    { title: 'About', url: '/about' },
   ];
 
   const secondaryLink = [
-    { title: "Career", url: "/career" },
-    { title: "Internship", url: "/internship" },
+    { title: 'Career', url: '/career' },
+    { title: 'Internship', url: '/internship' },
   ];
 
   const tertiaryLink = [
-    { title: "Contact Us", url: "/contact" },
-    { title: "FAQ", url: "/faq" },
+    { title: 'Contact Us', url: '/contact' },
+    { title: 'FAQ', url: '/faq' },
   ];
 
   const legalLink = [
-    { title: "Terms of Service", url: "/terms-of-service" },
-    { title: "Privacy Policy", url: "/privacy-policy" },
+    { title: 'Terms of Service', url: '/terms-of-service' },
+    { title: 'Privacy Policy', url: '/privacy-policy' },
   ];
 
   const socialLink = [
-    { title: "Gmail", icon: <GmailIcon />, url: "/" },
-    { title: "Instagram", icon: <InstagramIcon />, url: "/" },
-    { title: "Twitter", icon: <TwitterIcon />, url: "/" },
-    { title: "LinkedIn", icon: <LinkedInIcon />, url: "/" },
+    { title: 'Gmail', icon: <GmailIcon />, url: '/' },
+    { title: 'Instagram', icon: <InstagramIcon />, url: '/' },
+    { title: 'Twitter', icon: <TwitterIcon />, url: '/' },
+    { title: 'LinkedIn', icon: <LinkedInIcon />, url: '/' },
   ];
 
   return (
