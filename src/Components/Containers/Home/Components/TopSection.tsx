@@ -9,7 +9,7 @@ const TopSection: FC = () => {
           <div className="flex flex-wrap-reverse">
             <div className="w-full px-4 lg:w-1/2">
               <p className="font-mono text-lg xl:text-xl text-yellow-500 mb-4 md:mb-6">
-                Hi there I am
+                Hi there I am 
               </p>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl text-yellow-500 font-bold mb-2 md:mb-6">
