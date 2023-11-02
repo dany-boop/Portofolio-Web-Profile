@@ -1,18 +1,25 @@
 import { FC } from "react";
 
-export const FacebookIcon: FC = () => {
+export const GmailIcon: FC = () => {
   return (
     <span>
       <svg
-        className="w-5 h-5"
+        xmlns="http://www.w3.org/2000/svg"
+        className="icon icon-tabler icon-tabler-brand-gmail"
         width={24}
         height={24}
         viewBox="0 0 24 24"
-        fill="currentColor"
-        xmlns="http://www.w3.org/2000/svg"
+        stroke-width="1.5"
+        stroke="currentColor"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
       >
-        <title>Facebook</title>
-        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+        {" "}
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />{" "}
+        <path d="M16 20h3a1 1 0 0 0 1 -1v-14a1 1 0 0 0 -1 -1h-3v16z" />{" "}
+        <path d="M5 20h3v-16h-3a1 1 0 0 0 -1 1v14a1 1 0 0 0 1 1z" />{" "}
+        <path d="M16 4l-4 4l-4 -4" /> <path d="M4 6.5l8 7.5l8 -7.5" />{" "}
       </svg>
     </span>
   );

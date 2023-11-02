@@ -60,18 +60,17 @@ const Navbar: FC = () => {
       <div className="container">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-between relative">
-            <div className="px-4">
+            <div className="px-auto">
               <Link href="/" legacyBehavior>
                 <a
-                  className="inline-flex items-center gap-2 font-primary font-bold text-xl lg:text-2xl py-6"
+                  className="inline-flex items-center font-primary font-bold text-xl lg:text-2xl "
                   aria-label="logo"
                 >
-                  {/* <img
-                    src="/apple-touch-icon.png"
+                  <img
+                    src="/assets/Dany's-Logo.png"
                     alt="Brand Logo"
-                    className="w-8 h-8 object-cover object-center"
-                  /> */}
-                  Navbar
+                    className="pt-6 w-44 h-20  object-center"
+                  />
                 </a>
               </Link>
             </div>
@@ -99,22 +98,24 @@ const Navbar: FC = () => {
                 className="hidden absolute py-5 bg-yellow-500 shadow-lg  max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none"
               >
                 <ul className="block lg:flex">
-                  {headerNavLinks?.map((a, i) => (
-                    <li className="group" key={i}>
-                      <Link href={a.path} legacyBehavior>
-                        <a
-                          className={classNames(
-                            isMenuActive(a.path)
-                              ? "text-emerald-600"
-                              : "text-black",
-                            "font-secondary font-semibold text-base py-2 mx-8 lg:mx-2 flex group-hover:text-yellow-500 transition duration-300 ease-in-out"
-                          )}
-                        >
-                          {a.title}
-                        </a>
-                      </Link>
-                    </li>
-                  ))}
+                  {headerNavLinks?.map((a, i) => {
+                    return (
+                      <li className="group" key={i}>
+                        <Link href={a.path} legacyBehavior>
+                          <a
+                            className={classNames(
+                              isMenuActive(a.path)
+                                ? "text-emerald-600"
+                                : "text-black",
+                              "font-secondary font-semibold text-base py-2 mx-8 lg:mx-2 flex group-hover:text-emerald-500 transition duration-300 ease-in-out"
+                            )}
+                          >
+                            {a.title}
+                          </a>
+                        </Link>
+                      </li>
+                    );
+                  })}
                 </ul>
               </nav>
             </div>

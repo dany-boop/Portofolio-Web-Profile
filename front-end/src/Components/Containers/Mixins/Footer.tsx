@@ -1,5 +1,6 @@
 import { FC } from "react";
 import Link from "next/link";
+import { GmailIcon } from "../../Common/CustomIcons";
 
 import {
   FacebookIcon,
@@ -32,7 +33,7 @@ const Footer: FC = () => {
   ];
 
   const socialLink = [
-    { title: "Facebook", icon: <FacebookIcon />, url: "/" },
+    { title: "Gmail", icon: <GmailIcon />, url: "/" },
     { title: "Instagram", icon: <InstagramIcon />, url: "/" },
     { title: "Twitter", icon: <TwitterIcon />, url: "/" },
     { title: "LinkedIn", icon: <LinkedInIcon />, url: "/" },
@@ -62,20 +63,6 @@ const Footer: FC = () => {
             <p className="text-rose-400 text-justify sm:pr-8 mb-6">
               about your company, and include information about your products.
             </p>
-
-            <div className="flex gap-4">
-              {socialLink?.map((f, i) => (
-                <a
-                  href={f.url}
-                  target="_blank"
-                  className="text-emerald-600 hover:text-emerald-400 active:text-emerald-700 transition duration-100"
-                  rel="noreferrer"
-                  key={i}
-                >
-                  {f.icon}
-                </a>
-              ))}
-            </div>
           </div>
 
           <div>
@@ -150,9 +137,23 @@ const Footer: FC = () => {
             </nav>
           </div>
         </div>
-
         <div className="text-gray-400 text-sm text-center border-t border-gray-800 py-8">
-          © {year} - Moh.Dhany Asmoro. All rights reserved.
+          <div className="justify-center  flex gap-4">
+            {socialLink?.map((f, i) => (
+              <a
+                href={f.url}
+                target="_blank"
+                className="text-emerald-600 hover:text-emerald-400 active:text-emerald-700 transition duration-100"
+                rel="noreferrer"
+                key={i}
+              >
+                {f.icon}
+              </a>
+            ))}
+          </div>
+          <div className="pt-10">
+            © {year} - Moh.Dhany Asmoro. All rights reserved.
+          </div>
         </div>
       </footer>
     </div>
