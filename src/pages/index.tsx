@@ -1,6 +1,5 @@
 import { FC } from 'react';
-
-import ContainerHome from '@/components/Containers/Home/Home';
+import ContainerHome from '@/Components/Containers/Home/Home';
 
 const Home: FC = () => {
   return <ContainerHome />;
